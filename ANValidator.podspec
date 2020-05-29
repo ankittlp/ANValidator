@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       =  { :path => '.' } #{ :git => "http://EXAMPLE/ANValidator.git", :tag => "#{spec.version}" }
+  spec.source       =  { :git => "https://github.com/ankittlp/ANValidator.git", :tag => "0.0.1" } #{ :git => "http://EXAMPLE/ANValidator.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
