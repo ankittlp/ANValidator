@@ -104,7 +104,7 @@ public extension ValidationRule where T == String {
         return .init { (value) -> (status: Bool, statusMessage: String) in
             
             let result = value.trimmed.count != 0
-            return (result, result ? "Non empty string" : "can not be empty")
+            return (result, result ? "Non empty string" : "Value can not be empty")
         }
     }
 }
