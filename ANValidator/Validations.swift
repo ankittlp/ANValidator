@@ -79,6 +79,10 @@ public extension ValidationRule where T == String {
         return self.regex(".+@([A-Za-z0-9]+\\.)+[A-Za-z]{2}[A-Za-z]*", failedMessage: "Email is not correct")
     }
     
+    static var phoneNumber: Self {
+        return self.regex("^[0-9+]{0,1}+[0-9]{5,16}$", failedMessage: "Phone number is not correct")
+    }
+    
     static var password : Self  {
         return .init{ value in
             print("VAlidation Value \(value)")
@@ -109,15 +113,6 @@ public extension ValidationRule where T == String {
     }
 }
 
-public extension ValidationRule where T == Int {    
-    
-    static var phoneNumber : Self {
-        return .init{ value in
-            print("VAlidation Value \(value)")
-            return (true,"Success")
-        }
-    }
-}
 
 
 
