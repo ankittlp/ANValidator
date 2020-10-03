@@ -109,7 +109,7 @@ public extension ValidationRule where T == String {
     }
 }
 
-extension ValidationRule where T == Int {
+public extension ValidationRule where T == Int {    
     
     static var phoneNumber : Self {
         return .init{ value in
