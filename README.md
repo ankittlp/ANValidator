@@ -1,6 +1,6 @@
 # ANValidator
 
-ANValidator helps in easy validation of email, phonenumber, username rules based on default given ragex rules. 
+ANValidator helps in easy validation of email, phone number, username based on given ragex rules.
 
 ## Installation
 
